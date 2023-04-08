@@ -1,0 +1,23 @@
+{
+
+
+    "manifest_version": 3,
+    "version": "1.1",
+    "name": "Leads tracker",
+    "description": "Help to Copy link addreses and copy the link in tabs",
+    "icons":{
+        "128":"./images/icon2.png"
+    },
+    "action":{
+        "default_popup": "index.html",
+        "default_icon": {"48":"./images/icon2.png"}
+    },
+   
+    "permissions": [
+        "tabs"
+    ]
+
+
+
+
+}

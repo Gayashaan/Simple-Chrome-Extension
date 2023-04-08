@@ -1,0 +1,208 @@
+html, body{
+    background-color: #eeeeeefd;
+    margin: 0;
+    padding: 10px;
+    /* height: 100%; */
+    min-width: 450px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    background-color: rgb(13, 224, 224);
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.container > div.logo{
+    /* background-color: rgb(247, 74, 21); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: 35px;
+}
+.container > div.para{
+    color: white;
+    font-style: italic;
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 200px;
+    height: 100px; */
+    /* background-color: rgb(68, 250, 32); */
+    margin-right: auto;
+    margin-bottom: 13px;
+}
+.container > div.logo > img{
+    width: 90px;
+    height: 80px;
+}
+.para > h1,.para > p{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.container2 {
+    /* background-color: brown; */
+    width: 100%;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container2 > div.userIn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+
+}
+
+.container2 > div.userIn > input{
+    outline: none;
+    width: 100%;
+    border: 2px solid rgb(47, 252, 40);
+    border-radius: 14px;
+    padding: 10px;
+
+}
+.container2 > div.btns{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.container2 > div.btns > #input-btn {
+    background-color: rgb(247, 205, 22);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 2px;
+    height: 53px;
+    width: 85px;
+    font-weight: bold;
+    transition: 0.5s;
+
+}
+
+.container2 > div.btns > #input-btn:hover{
+    background-color: rgb(236, 175, 6);
+    cursor: pointer;
+}
+.container2 > div.btns #save-btn {
+    background-color: #16DB65;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 2px;
+    height: 53px;
+    width: 85px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.container2 > div.btns > #save-btn:hover{
+    background-color: #058C42;
+    cursor: pointer;
+}
+.container2 > div.btns #delete-btn {
+    background-color: rgb(243, 34, 97);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 2px;
+    height: 53px;
+    width: 85px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.container2 > div.btns > #delete-btn:hover{
+    background-color: rgb(206, 8, 58);
+    cursor: pointer;
+}
+.container2 > div.err{
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    height: 50px;
+    width: 100%;
+}
+.container2 > div.err > p{
+    /* background-color: #16DB65; */
+    font-size:0.9em;
+    color: red;
+    height: 20px;
+    /* width: 100%; */
+    padding: 0px 10px 10px 10px;
+    margin: 0;
+}
+
+.container2 > div.lists {
+    /* background-color: rgb(240, 133, 133); */
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+
+}
+.container2 > div.lists > ul {
+    padding-left: 0;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.container2 > div.lists > ul > li{
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 7px;
+    word-wrap: break-word;
+    white-space: normal;
+    box-shadow: 0 2px 5px #ccc;
+}
+li a{
+    text-decoration: none;
+    color: #49D49D;
+    transition: 0.5s;
+    width: 395px;
+}
+a:hover{
+    color: rgb(13, 224, 224);
+    text-decoration: underline;
+}
+
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(223, 215, 215);
+    color: rgb(0, 0, 0);
+    min-width: 30px;
+    height: 30px;
+    margin-left: auto;
+    border-radius: 10px;
+    transition: 0.3s;
+    font-size: 18px;
+}
+.btn-box:hover{
+    -ms-transform: scale(1.2); /* IE 9 */ 
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); /*zoom effect transorm*/
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
