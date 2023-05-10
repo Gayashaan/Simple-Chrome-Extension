@@ -18,6 +18,14 @@ if(leadsFromLocalStorage){
         deleteBtn.style.display = 'inline-block';
     },500)
 };
+function funcErr(msg, time){
+    errorMsg.textContent = msg
+    setTimeout(() =>{
+        errorMsg.textContent = ""
+    },time)
+    inputEl.focus()
+    
+}
 
 // function del() {
 //   const element = document.getElementById("ul-el");
@@ -26,6 +34,18 @@ if(leadsFromLocalStorage){
 //   localStorage.setItem("myLeads", JSON.stringify(myLeads));
 
 // }
+
+function del() {
+
+    if (confirm("are you sure you want to delete this item")) {
+        funcErr("You have succesfully deleted", 2000);
+        
+    } else {
+        funcErr("Unable to delete item", 2000);
+    }
+    
+}
+
 
 function render(leads){
     ulEl.textContent = "";
@@ -64,11 +84,12 @@ inputBtn.addEventListener("click", () => {
         //     deleteBtn.style.display = 'inline-block';
         // },500)
     }else{
-        errorMsg.textContent = "Cannot store empty string"
-        setTimeout(() =>{
-            errorMsg.textContent = ""
-        },1000)
-        inputEl.focus()
+        funcErr("Cannot store empty string", 1000)
+        // errorMsg.textContent = "Cannot store empty string"
+        // setTimeout(() =>{
+        //     errorMsg.textContent = ""
+        // },1000)
+        // inputEl.focus()
     }
 
 });
@@ -82,11 +103,12 @@ inputBtn.addEventListener("click", () => {
 
 deleteBtn.addEventListener("click",() => {
     if(!localStorage.getItem("myLeads")){
-        errorMsg.textContent = "Can not proceed"
-        setTimeout(() =>{
-            errorMsg.textContent = ""
-        },1000)
-        inputEl.focus();
+        funcErr("Can not proceed", 1000)
+        // errorMsg.textContent = "Can not proceed"
+        // setTimeout(() =>{
+        //     errorMsg.textContent = ""
+        // },1000)
+        // inputEl.focus();
     }else{
         localStorage.clear();
         myLeads = []
